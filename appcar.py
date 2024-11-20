@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 import pickle
 
-loaded = joblib.load('y_pred_Price')
+loaded = joblib.load('y_pred_Price.pkl')
 
 brand = st.text_input("inserisci il brand")
 kms_driven = st.text_input("inserisci i km")
