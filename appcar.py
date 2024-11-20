@@ -15,10 +15,10 @@ auto = {'brand':[brand],
         'old_year': [old_year],
         }
 
-tt=pd.DataFrame(auto)
+df_auto =pd.DataFrame(auto)
 
 def prezzo(auto):
-    pred = loaded(auto)[0]
+    pred = loaded.predict(df_auto)[0]
     
     return pred
 
