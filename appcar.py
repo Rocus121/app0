@@ -1,6 +1,7 @@
 import streamlit as st
 import joblib
 import pandas as pd
+import pickle
 
 loaded = joblib.load('y_pred_Price')
 
