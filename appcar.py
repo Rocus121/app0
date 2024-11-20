@@ -15,14 +15,18 @@ auto = {'brand':[brand],
         'old_year': [old_year],
         }
 
-pd.DataFrame(auto)
+tt=pd.DataFrame(auto)
 
 def prezzo(auto):
-    pred = loaded.predict(auto)
+    pred = loaded.predict(auto)[0]
     
     return pred
 
-# def main():
+def main():
     
-#     st.text("Ciao questo front-end funziona")
+    st.text(f"pred{prezzo(tt)}")
+    
+if __name__ == "__main__":
+    main()        
+    
     
