@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 import pickle
 
-loaded = joblib.load('y_pred_Price.pkl')
+loaded = joblib.load('y_pred_Price')
 
 brand = st.text_input("inserisci il brand")
 kms_driven = st.text_input("inserisci i km")
@@ -25,7 +25,7 @@ def prezzo(auto):
 
 def main():
     
-    st.text(f"pred{prezzo(tt)}")
+    st.text(f"pred{prezzo(df_auto)}")
     
 if __name__ == "__main__":
     main()  
