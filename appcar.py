@@ -18,7 +18,7 @@ auto = {'brand':[brand],
 tt=pd.DataFrame(auto)
 
 def prezzo(auto):
-    pred = loaded.predict(auto)[0]
+    pred = loaded(auto)[0]
     
     return pred
 
@@ -27,6 +27,4 @@ def main():
     st.text(f"pred{prezzo(tt)}")
     
 if __name__ == "__main__":
-    main()        
-    
-    
+    main()  
